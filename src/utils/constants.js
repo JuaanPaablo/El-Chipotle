@@ -16,9 +16,7 @@ export const MENU_IMAGES = [
 
 export const NAV_LINKS = [
     { name: 'Historia', href: '#historia' },
-    { name: 'Galería', href: '#galeria' },
     { name: 'Menú', href: '#menu' },
-    { name: 'Menú Completo', href: '#menu-completo' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Ubicación', href: '#ubicacion' },
 ];

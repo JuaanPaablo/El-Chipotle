@@ -40,18 +40,12 @@ const Navbar = () => {
                     {NAV_LINKS.map((link) => (
                         <a
                             key={link.name}
-                            href={isHome ? link.href : `/${link.href}`}
+                            href={link.href}
                             className="text-white font-bold hover:text-yellow-400 transition-colors uppercase tracking-wide text-xs drop-shadow-sm"
                         >
                             {link.name}
                         </a>
                     ))}
-                    <Link
-                        to="/menu"
-                        className="text-white font-bold hover:text-yellow-400 transition-colors uppercase tracking-wide text-xs drop-shadow-sm"
-                    >
-                        Menú Completo
-                    </Link>
                     <a
                         href={WHATSAPP_CONFIG.getLink()}
                         target="_blank"
@@ -79,20 +73,13 @@ const Navbar = () => {
                         {NAV_LINKS.map((link) => (
                             <a
                                 key={link.name}
-                                href={isHome ? link.href : `/${link.href}`}
+                                href={link.href}
                                 className="text-white font-bold hover:text-yellow-400 text-center py-2 border-b border-red-800 last:border-0"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {link.name}
                             </a>
                         ))}
-                        <Link
-                            to="/menu"
-                            className="text-white font-bold hover:text-yellow-400 text-center py-2 border-b border-red-800 last:border-0"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Menú Completo
-                        </Link>
                     </div>
                 </div>
             )}

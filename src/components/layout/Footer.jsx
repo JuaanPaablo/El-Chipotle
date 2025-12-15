@@ -3,6 +3,14 @@ import { MapPin, Phone, Instagram, Facebook, MessageCircle } from 'lucide-react'
 import { IMAGES, WHATSAPP_CONFIG, LOCATION_CONFIG } from '../../utils/constants';
 
 const Footer = () => {
+    // Obtener el día actual (0 = Domingo, 1 = Lunes, ..., 6 = Sábado)
+    const currentDay = new Date().getDay();
+
+    // Determinar qué día resaltar
+    const isWeekday = [1, 2, 4, 5, 6].includes(currentDay); // Lunes, Martes, Jueves, Viernes, Sábado
+    const isWednesday = currentDay === 3;
+    const isSunday = currentDay === 0;
+
     return (
         <footer id="ubicacion" className="bg-stone-900 text-white pt-16 pb-8 border-t-8 border-yellow-500 relative">
             <div className="container mx-auto px-4">
@@ -73,16 +81,16 @@ const Footer = () => {
                         </h3>
                         <ul className="space-y-3 text-gray-400 text-sm">
                             <li className="flex justify-between max-w-xs mx-auto border-b border-stone-800 pb-2">
-                                <span>Lunes - Jueves</span>
-                                <span className="font-mono">12:00 PM - 10:00 PM</span>
+                                <span className={isWeekday ? "text-yellow-400 font-bold" : ""}>Demás días</span>
+                                <span className={`font-mono ${isWeekday ? "text-white font-bold" : ""}`}>12:30AM - 11:30PM</span>
                             </li>
                             <li className="flex justify-between max-w-xs mx-auto border-b border-stone-800 pb-2">
-                                <span className="text-yellow-400 font-bold">Viernes - Sábado</span>
-                                <span className="text-white font-mono font-bold">12:00 PM - 12:00 AM</span>
+                                <span className={isWednesday ? "text-yellow-400 font-bold" : ""}>Miércoles</span>
+                                <span className={`font-mono ${isWednesday ? "text-white font-bold" : ""}`}>Cerrado</span>
                             </li>
                             <li className="flex justify-between max-w-xs mx-auto pb-2">
-                                <span>Domingo</span>
-                                <span className="font-mono">12:00 PM - 9:00 PM</span>
+                                <span className={isSunday ? "text-yellow-400 font-bold" : ""}>Domingo</span>
+                                <span className={`font-mono ${isSunday ? "text-white font-bold" : ""}`}>12:30AM - 5:00PM</span>
                             </li>
                         </ul>
                     </div>
@@ -91,10 +99,20 @@ const Footer = () => {
                     <div className="text-center md:text-right flex flex-col items-center md:items-end">
                         <h3 className="font-mexican text-xl text-white mb-6">Síguenos</h3>
                         <div className="flex gap-3 mb-6">
-                            <a href="#" className="bg-stone-800 p-3 rounded-full hover:bg-red-600 transition-all hover:-translate-y-1 text-white shadow-lg">
+                            <a
+                                href="https://www.instagram.com/elchipotle_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-stone-800 p-3 rounded-full hover:bg-red-600 transition-all hover:-translate-y-1 text-white shadow-lg"
+                            >
                                 <Instagram size={20} />
                             </a>
-                            <a href="#" className="bg-stone-800 p-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 text-white shadow-lg">
+                            <a
+                                href="https://www.facebook.com/chipotleibarra?locale=es_LA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-stone-800 p-3 rounded-full hover:bg-blue-600 transition-all hover:-translate-y-1 text-white shadow-lg"
+                            >
                                 <Facebook size={20} />
                             </a>
                         </div>

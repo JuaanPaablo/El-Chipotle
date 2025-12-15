@@ -23,7 +23,7 @@ const FAQ = () => {
         },
         {
             question: "¿Tienen parqueadero?",
-            answer: "Sí, contamos con parqueadero privado y seguro para nuestros clientes justo al lado del restaurante."
+            answer: "No contamos con parqueadero privado. Hay parqueadero público disponible en la zona."
         }
     ];
 
@@ -61,8 +61,6 @@ const FAQ = () => {
                         <div
                             key={index}
                             className={`bg-white rounded-2xl overflow-hidden border transition-all duration-300 ${openIndex === index ? 'border-red-500 shadow-lg' : 'border-stone-200 hover:border-red-300'}`}
-                            data-aos="fade-up"
-                            data-aos-delay={200 + (index * 100)}
                         >
                             <button
                                 className="w-full px-5 py-4 text-left flex justify-between items-center focus:outline-none"
@@ -79,7 +77,7 @@ const FAQ = () => {
                             </button>
 
                             <div
-                                className={`px-5 transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-40 pb-4 opacity-100' : 'max-h-0 opacity-0'}`}
+                                className={`px-5 transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-96 pb-4' : 'max-h-0'}`}
                             >
                                 <p className="text-stone-600 leading-relaxed text-sm">
                                     {faq.answer}

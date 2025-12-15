@@ -19,15 +19,11 @@ const MenuPreview = () => {
                         data-aos-delay="200"
                     >
                         <div className="h-48 overflow-hidden relative">
-                            <img src={IMAGES.burger} alt="Burger" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-bold text-red-600 shadow-sm">$18.00</div>
+                            <img src={IMAGES.steak} alt="Tomahawk" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
-                            <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Tomahowk</h3>
-                            <p className="text-gray-500 mb-5 text-xs leading-relaxed">Corte importado de 400g, asado al carbón, bañado en chimichurri de la casa y acompañado de papas rústicas doradas.</p>
-                            <Link to="/menu" className="block w-full text-center py-2 border-2 border-red-500 text-red-500 font-bold rounded-xl hover:bg-red-50 transition-colors uppercase tracking-wide text-xs">
-                                Ver Detalles
-                            </Link>
+                            <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Fajitas</h3>
+                            <p className="text-gray-500 mb-5 text-xs leading-relaxed">Tiernas tiras de carne o pollo marinadas, salteadas con pimientos y cebolla, servidas con tortillas calientes y guacamole.</p>
                         </div>
                     </div>
 
@@ -39,15 +35,11 @@ const MenuPreview = () => {
                     >
                         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-red-900 text-xs font-bold px-3 py-1 text-center uppercase tracking-widest z-20">★ El Más Vendido ★</div>
                         <div className="h-48 overflow-hidden relative mt-6">
-                            <img src={IMAGES.steak} alt="Steak" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                            <div className="absolute bottom-4 right-4 bg-red-600 text-white px-3 py-1 rounded-lg font-bold shadow-lg text-sm">$7.00</div>
+                            <img src={IMAGES.tacos} alt="Fajita" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
-                            <h3 className="font-mexican text-2xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Fajita</h3>
-                            <p className="text-gray-500 mb-5 text-xs leading-relaxed">Tiernas tiras de carne o pollo marinadas, salteadas con pimientos y cebolla, servidas con tortillas calientes y guacamole.</p>
-                            <Link to="/menu" className="block w-full text-center py-2 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-colors shadow-lg uppercase tracking-wide text-xs">
-                                Ordenar Ahora
-                            </Link>
+                            <h3 className="font-mexican text-2xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Hamburguesa Chipotle</h3>
+                            <p className="text-gray-500 mb-5 text-xs leading-relaxed">Jugosa carne de res, queso cheddar, lechuga fresca, tomate, cebolla caramelizada y nuestra salsa chipotle especial.</p>
                         </div>
                     </div>
 
@@ -58,15 +50,11 @@ const MenuPreview = () => {
                         data-aos-delay="400"
                     >
                         <div className="h-48 overflow-hidden relative">
-                            <img src={IMAGES.combo} alt="Tacos" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-bold text-red-600 shadow-sm">$4.00</div>
+                            <img src={IMAGES.salad} alt="Ensalada" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
                             <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Ensaladas</h3>
                             <p className="text-gray-500 mb-5 text-xs leading-relaxed">Frescas lechugas mixtas, aderezo ranch de la casa, crutones artesanales, queso parmesano y pollo a la parrilla.</p>
-                            <Link to="/menu" className="block w-full text-center py-2 border-2 border-red-500 text-red-500 font-bold rounded-xl hover:bg-red-50 transition-colors uppercase tracking-wide text-xs">
-                                Ver Detalles
-                            </Link>
                         </div>
                     </div>
                 </div>
