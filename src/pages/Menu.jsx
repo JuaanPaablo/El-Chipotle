@@ -3,27 +3,27 @@ import { MENU_ITEMS } from '../utils/constants';
 
 const Menu = () => {
     return (
-        <div className="pt-24 pb-20 bg-stone-50 min-h-screen">
+        <div className="pt-20 pb-16 bg-stone-50 min-h-screen">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h1 className="font-mexican text-5xl md:text-7xl text-red-700 mb-4 drop-shadow-md">
+                <div className="text-center mb-12">
+                    <h1 className="font-mexican text-4xl md:text-5xl text-red-700 mb-3 drop-shadow-md">
                         Nuestro Menú
                     </h1>
-                    <div className="w-32 h-1 bg-yellow-400 mx-auto rounded-full mb-6"></div>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                    <div className="w-28 h-1 bg-yellow-400 mx-auto rounded-full mb-5"></div>
+                    <p className="text-base text-gray-600 max-w-2xl mx-auto">
                         Explora nuestra selección de sabores auténticos. Desde lo clásico hasta lo más atrevido.
                     </p>
                 </div>
 
                 {MENU_ITEMS.map((category, index) => (
-                    <div key={index} className="mb-20">
-                        <h2 className="font-mexican text-4xl text-stone-800 mb-10 border-b-4 border-yellow-400 inline-block pb-2">
+                    <div key={index} className="mb-16">
+                        <h2 className="font-mexican text-3xl text-stone-800 mb-8 border-b-4 border-yellow-400 inline-block pb-2">
                             {category.category}
                         </h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {category.items.map((item) => (
                                 <div key={item.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-stone-100">
-                                    <div className="h-64 overflow-hidden relative">
+                                    <div className="h-48 overflow-hidden relative">
                                         <img
                                             src={item.image}
                                             alt={item.name}
@@ -34,18 +34,18 @@ const Menu = () => {
                                                 Popular
                                             </div>
                                         )}
-                                        <div className="absolute bottom-4 right-4 bg-red-600 text-white font-bold px-4 py-2 rounded-lg shadow-lg">
+                                            <div className="absolute bottom-4 right-4 bg-red-600 text-white font-bold px-3 py-1 rounded-lg shadow-lg text-sm">
                                             {item.price}
                                         </div>
                                     </div>
-                                    <div className="p-6">
-                                        <h3 className="font-mexican text-2xl text-stone-800 mb-2 group-hover:text-red-700 transition-colors">
+                                    <div className="p-5">
+                                        <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-700 transition-colors">
                                             {item.name}
                                         </h3>
-                                        <p className="text-gray-500 mb-4 leading-relaxed">
+                                        <p className="text-gray-500 mb-3 leading-relaxed text-sm">
                                             {item.description}
                                         </p>
-                                        <button className="w-full py-3 border-2 border-red-100 text-red-600 font-bold rounded-xl hover:bg-red-50 hover:border-red-200 transition-colors uppercase text-sm tracking-wide">
+                                        <button className="w-full py-2 border-2 border-red-100 text-red-600 font-bold rounded-xl hover:bg-red-50 hover:border-red-200 transition-colors uppercase text-xs tracking-wide">
                                             Agregar al Pedido
                                         </button>
                                     </div>

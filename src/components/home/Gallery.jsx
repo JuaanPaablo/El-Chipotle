@@ -3,22 +3,22 @@ import { IMAGES, WHATSAPP_CONFIG } from '../../utils/constants';
 
 const Gallery = () => {
     return (
-        <section id="galeria" className="py-20 bg-red-900 text-white bg-pattern">
+        <section id="galeria" className="py-16 bg-red-900 text-white bg-pattern">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
+                <div className="text-center mb-12">
                     <h2
-                        className="font-mexican text-4xl md:text-6xl text-yellow-400 mb-4 drop-shadow-md"
+                        className="font-mexican text-3xl md:text-4xl text-yellow-400 mb-4 drop-shadow-md"
                         data-aos="fade-up"
                     >
                         La Galería del Sabor
                     </h2>
                     <div
-                        className="w-24 h-1 bg-yellow-400 mx-auto rounded-full mb-6"
+                        className="w-20 h-1 bg-yellow-400 mx-auto rounded-full mb-5"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     ></div>
                     <p
-                        className="mt-4 text-black text-lg max-w-2xl mx-auto"
+                        className="mt-4 text-black text-base max-w-2xl mx-auto"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
@@ -33,7 +33,7 @@ const Gallery = () => {
                         data-aos="zoom-in"
                     >
                         <img src={IMAGES.steak} alt="Corte de Carne" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@ const Gallery = () => {
                     >
                         <img src={IMAGES.burger} alt="Hamburguesa Chipotle" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span className="font-mexican text-2xl text-white border-4 border-white px-6 py-2 rounded">Cortes de Carne</span>
+                            <span className="font-mexican text-lg text-white border-4 border-white px-5 py-2 rounded">Cortes de Carne</span>
                         </div>
                     </div>
 
@@ -55,8 +55,8 @@ const Gallery = () => {
                         data-aos-delay="200"
                     >
                         <img src={IMAGES.tacos} alt="Tacos" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-red-900 to-transparent p-4 transform translate-y-full group-hover:translate-y-0 transition-transform">
-                            <p className="text-center font-bold text-lg text-white">Burgers</p>
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-red-900 to-transparent p-3 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                            <p className="text-center font-bold text-base text-white">Burgers</p>
                         </div>
                     </div>
 
@@ -67,19 +67,19 @@ const Gallery = () => {
                     >
                         <img src={IMAGES.salad} alt="Ensalada Especial" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                         <div className="absolute bottom-0 left-0 right-0 bg-yellow-500/90 p-2 transform translate-y-full group-hover:translate-y-0 transition-transform">
-                            <p className="text-center font-bold text-red-900 text-sm">Opciones Saludables</p>
+                            <p className="text-center font-bold text-red-900 text-xs">Opciones Saludables</p>
                         </div>
                     </div>
 
                     <div
-                        className="lg:col-span-4 bg-yellow-500 rounded-xl flex flex-col md:flex-row items-center justify-between p-8 mt-4 transform hover:scale-[1.01] transition-transform shadow-xl"
+                        className="lg:col-span-4 bg-yellow-500 rounded-xl flex flex-col md:flex-row items-center justify-between p-6 mt-3 transform hover:scale-[1.01] transition-transform shadow-xl"
                         data-aos="fade-up"
                     >
-                        <div className="mb-4 md:mb-0">
-                            <h3 className="font-mexican text-3xl text-red-900 mb-1">¿Se te antojó?</h3>
-                            <p className="text-red-800 font-medium">No te quedes con las ganas. ¡Estamos listos para atenderte!</p>
+                        <div className="mb-3 md:mb-0">
+                            <h3 className="font-mexican text-2xl text-red-900 mb-1">¿Se te antojó?</h3>
+                            <p className="text-red-800 font-medium text-sm">No te quedes con las ganas. ¡Estamos listos para atenderte!</p>
                         </div>
-                        <a href={WHATSAPP_CONFIG.getLink()} target="_blank" rel="noopener noreferrer" className="inline-block bg-red-700 text-white font-bold px-8 py-3 rounded-full hover:bg-red-800 transition-colors shadow-lg">
+                        <a href={WHATSAPP_CONFIG.getLink()} target="_blank" rel="noopener noreferrer" className="inline-block bg-red-700 text-white font-bold px-6 py-2 rounded-full hover:bg-red-800 transition-colors shadow-lg text-sm">
                             ¡Pedir Ahora!
                         </a>
                     </div>

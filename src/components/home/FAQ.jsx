@@ -32,23 +32,23 @@ const FAQ = () => {
     };
 
     return (
-        <section id="faq" className="py-20 bg-stone-100">
+        <section id="faq" className="py-16 bg-stone-100">
             <div className="container mx-auto px-4 max-w-3xl">
-                <div className="text-center mb-12">
+                <div className="text-center mb-10">
                     <div
-                        className="inline-flex items-center justify-center p-3 bg-red-100 rounded-full mb-4"
+                        className="inline-flex items-center justify-center p-2 bg-red-100 rounded-full mb-3"
                         data-aos="zoom-in"
                     >
-                        <HelpCircle className="text-red-600 w-8 h-8" />
+                        <HelpCircle className="text-red-600 w-7 h-7" />
                     </div>
                     <h2
-                        className="font-mexican text-3xl md:text-5xl text-gray-900 mb-4"
+                        className="font-mexican text-3xl md:text-4xl text-gray-900 mb-3"
                         data-aos="fade-up"
                     >
                         Preguntas Frecuentes
                     </h2>
                     <p
-                        className="text-gray-600"
+                        className="text-gray-600 text-sm"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
@@ -56,7 +56,7 @@ const FAQ = () => {
                     </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
@@ -65,10 +65,10 @@ const FAQ = () => {
                             data-aos-delay={200 + (index * 100)}
                         >
                             <button
-                                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none"
+                                className="w-full px-5 py-4 text-left flex justify-between items-center focus:outline-none"
                                 onClick={() => toggleFAQ(index)}
                             >
-                                <span className={`font-bold text-lg ${openIndex === index ? 'text-red-700' : 'text-stone-800'}`}>
+                                <span className={`font-bold text-base ${openIndex === index ? 'text-red-700' : 'text-stone-800'}`}>
                                     {faq.question}
                                 </span>
                                 {openIndex === index ? (
@@ -79,9 +79,9 @@ const FAQ = () => {
                             </button>
 
                             <div
-                                className={`px-6 transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
+                                className={`px-5 transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-40 pb-4 opacity-100' : 'max-h-0 opacity-0'}`}
                             >
-                                <p className="text-stone-600 leading-relaxed">
+                                <p className="text-stone-600 leading-relaxed text-sm">
                                     {faq.answer}
                                 </p>
                             </div>

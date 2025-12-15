@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
                 {/* Logo grande con fallback */}
                 <div
-                    className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-yellow-500 shadow-2xl mb-8 bg-white flex items-center justify-center overflow-hidden animate-bounce-slow"
+                    className="w-36 h-36 md:w-48 md:h-48 rounded-full border-4 border-yellow-500 shadow-2xl mb-6 bg-white flex items-center justify-center overflow-hidden animate-bounce-slow"
                     data-aos="zoom-in"
                 >
                     <img
@@ -31,21 +31,21 @@ const Hero = () => {
                 </div>
 
                 <h1
-                    className="font-mexican text-5xl md:text-7xl text-yellow-400 mb-4 drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] tracking-wider"
+                    className="font-mexican text-4xl md:text-5xl text-yellow-400 mb-3 drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] tracking-wider"
                     data-aos="fade-up"
                     data-aos-delay="200"
                 >
                     Auténtico Sabor
                 </h1>
                 <h2
-                    className="font-mexican text-3xl md:text-5xl text-white mb-8 drop-shadow-lg"
+                    className="font-mexican text-2xl md:text-4xl text-white mb-6 drop-shadow-lg"
                     data-aos="fade-up"
                     data-aos-delay="400"
                 >
                     Mexican & American Food
                 </h2>
                 <p
-                    className="text-xl text-gray-200 mb-10 max-w-2xl font-light"
+                    className="text-base text-gray-200 mb-8 max-w-2xl font-light"
                     data-aos="fade-up"
                     data-aos-delay="600"
                 >
@@ -58,7 +58,7 @@ const Hero = () => {
                 >
                     <Link
                         to="/menu"
-                        className="bg-red-600 hover:bg-red-500 text-white text-lg px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(220,38,38,0.5)] border-2 border-red-400"
+                        className="bg-red-600 hover:bg-red-500 text-white text-base px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(220,38,38,0.5)] border-2 border-red-400"
                     >
                         Ver Menú
                     </Link>
@@ -66,15 +66,15 @@ const Hero = () => {
                         href={WHATSAPP_CONFIG.getLink()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-green-600 hover:bg-green-500 text-white text-lg px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(22,163,74,0.5)] border-2 border-green-400 flex items-center justify-center gap-2"
+                        className="bg-green-600 hover:bg-green-500 text-white text-base px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(22,163,74,0.5)] border-2 border-green-400 flex items-center justify-center gap-2"
                     >
                         <MessageCircle /> Pedir por WhatsApp
                     </a>
                 </div>
             </div>
 
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce">
-                <ChevronDown size={40} />
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce">
+                <ChevronDown size={32} />
             </div>
         </header>
     );
