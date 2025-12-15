@@ -39,7 +39,7 @@ const FullMenuGallery = () => {
                         >
                             <img
                                 src={image}
-                                alt={`Menú ${index + 1}`}
+                                alt={`Menú completo de El Chipotle - Restaurante de comida mexicana - Página ${index + 1}`}
                                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                             />
 

@@ -19,7 +19,7 @@ const MenuPreview = () => {
                         data-aos-delay="200"
                     >
                         <div className="h-48 overflow-hidden relative">
-                            <img src={IMAGES.steak} alt="Tomahawk" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src={IMAGES.steak} alt="Fajitas mexicanas con carne marinada, pimientos y cebolla - El Chipotle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
                             <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Fajitas</h3>
@@ -35,7 +35,7 @@ const MenuPreview = () => {
                     >
                         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-red-900 text-xs font-bold px-3 py-1 text-center uppercase tracking-widest z-20">★ El Más Vendido ★</div>
                         <div className="h-48 overflow-hidden relative mt-6">
-                            <img src={IMAGES.tacos} alt="Fajita" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src={IMAGES.tacos} alt="Hamburguesa Chipotle gourmet con queso cheddar y salsa especial - El Chipotle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
                             <h3 className="font-mexican text-2xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Hamburguesa Chipotle</h3>
@@ -50,7 +50,7 @@ const MenuPreview = () => {
                         data-aos-delay="400"
                     >
                         <div className="h-48 overflow-hidden relative">
-                            <img src={IMAGES.salad} alt="Ensalada" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src={IMAGES.salad} alt="Ensalada fresca con lechuga, aderezo ranch y pollo a la parrilla - El Chipotle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-6">
                             <h3 className="font-mexican text-xl text-stone-800 mb-2 group-hover:text-red-600 transition-colors">Ensaladas</h3>

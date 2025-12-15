@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-stone-50 z-10"></div>
                 <img
                     src={IMAGES.heroBg}
-                    alt="Fondo Parrilla"
+                    alt="Restaurante El Chipotle - Comida mexicana y americana auténtica"
                     className="w-full h-full object-cover animate-pulse-slow scale-110"
                 />
             </div>
@@ -24,7 +24,7 @@ const Hero = () => {
                 >
                     <img
                         src={IMAGES.logo}
-                        alt="El Chipotle Gran Logo"
+                        alt="Logo de El Chipotle - Restaurante de comida mexicana"
                         className="w-full h-full object-contain"
                         onError={(e) => { e.target.style.display = 'none'; e.target.parentElement.innerHTML = '<span class="font-mexican text-4xl text-red-700">El Chipotle</span>' }}
                     />
